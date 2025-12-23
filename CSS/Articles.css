@@ -4,7 +4,7 @@
     Body{
         background-color:whitesmoke;
         display: grid;
-        grid-template-rows: 1fr 280px 450px 70px;
+        grid-template-rows: auto auto auto 70px;
     }
 
     .Bilde{
@@ -46,6 +46,7 @@
     color: var(--subtext-color);
     font-family: var(--Underskrifts-font);
     margin-top:0;
+    font-size: clamp(15px, 5vw, 25px);
     }
 
     .overskrift4{
@@ -73,7 +74,8 @@
     }
 
     #Oppsummering{
-    grid-row: 2;
+        grid-row: 2;
+        font-size: clamp(15px, 5vw, 25px);
     }
 
     #Liste{
@@ -86,7 +88,8 @@
     }
 
     #Quiz{
-    grid-row: 3;
+        grid-row: 3;
+        font-size: clamp(15px, 5vw, 25px);
     }
 
     .Valg{

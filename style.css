@@ -6,7 +6,7 @@
     body{
         background-color:var(--bgFarge);
         display:grid;
-        grid-template-rows: 1fr 3fr 1fr 3fr 1fr 5fr 5fr 1fr 1fr 1fr 100px;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto 100px;
         height: 100vh;
         margin:0;
     }
@@ -17,6 +17,7 @@
         margin-top:0;
         font-family: var(--Overskrifts-font);
         block-size: 40px;
+        font-size: clamp(40px, 10vw, 70px);
     }
     
     #Hovedbilde{
@@ -81,7 +82,7 @@
         grid-row: 6;
         margin:8px;
         margin-top:20px;
-        height: 50px;
+        height: clamp(50px,15vw,60px);
         width:95%;
         background-image: url(Bilder/Blomsterhage.png);
         background-size: cover;
@@ -94,7 +95,7 @@
         color:rgb(255, 255, 255);
         margin:0px;
         text-shadow: 0px 5px 20px black;
-        font-size: 20px;
+        font-size: clamp(20px,15vw,29px);
         font-family: var(--Overskrifts-font);
     }
 
@@ -177,7 +178,6 @@
         font-size: 14px;
         border-style: solid;
         border-radius: 10px;
-        height: 40px;
         padding:6px;
         border-color: var(--Nyanse2);
         box-shadow: var(--Skygge);
@@ -188,6 +188,7 @@
 
     #Sitatboks{
         grid-row: 3;
+        font-size: clamp(14px, 4vw, 20px);
     }
 
     #Sitatboks:before{
@@ -207,6 +208,7 @@
     #Faktaboks{
         grid-row:10;
         padding-left:7px;
+        font-size: clamp(14px, 4vw, 20px);
     }
 
     #Faktaboks:before{
@@ -234,7 +236,12 @@
         color:black;
         text-decoration: none;
     }
-    
+}
+
+@media (max-width:420px){
+    #Hidden{
+        display:none;
+    }
 }
 
 /* === Desktop === */
