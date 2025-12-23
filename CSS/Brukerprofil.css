@@ -1,0 +1,22 @@
+
+/*______________________________Mobil (Standard)___________________________*/
+@media (max-width:450px){
+    body{
+        background-color: var(--bgFarge);
+    }
+
+    #varsling{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/*______________________________Desktop____________________________________*/
+
+
+@media (min-width:450px){
+    body{
+        background-color: var(--bgFarge);
+    }
+}

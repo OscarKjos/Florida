@@ -1,0 +1,245 @@
+
+/* === Mobil (standard) === */
+
+@media (max-width:450px){
+    
+    body{
+        background-color:var(--bgFarge);
+        display:grid;
+        grid-template-rows: 1fr 3fr 1fr 3fr 1fr 5fr 5fr 1fr 1fr 1fr 100px;
+        height: 100vh;
+        margin:0;
+    }
+
+    #overskrift{
+        font-size: 40px;
+        text-align: center;
+        margin-top:0;
+        font-family: var(--Overskrifts-font);
+        block-size: 40px;
+    }
+    
+    #Hovedbilde{
+         min-width: 100%;
+         max-width: 100%;
+         grid-row: 2;
+         
+    }
+
+    .Gridboks{
+        grid-row: 5;
+        align-items: center;
+        display:flex;
+        flex-direction: row;
+        justify-content:space-around;
+    }
+
+    .Flexboks{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .Bilde{
+        width: 100px;
+        border-radius: 20px;
+    }
+
+    .Tekst{
+        font-size: 10px;
+        font-family: var(--Overskrifts-font);
+    }
+
+    .Knapp{
+        height: 130px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #overskrift2{
+        font-size: 20px;
+        margin-left:10px;
+        font-family: var(--Overskrifts-font);
+    }
+
+    .Veiledning{
+        display: flex;
+        grid-row: 4;
+        justify-content: space-between;
+        margin-top:0;
+    }
+
+    #Veiledningknapp{
+        font-size: 20px;
+        height: 30px;
+        margin-top:10px;
+        margin-right:10px;
+    }
+
+    #Blomster{
+        grid-row: 6;
+        margin:8px;
+        margin-top:20px;
+        height: 50px;
+        width:95%;
+        background-image: url(Bilder/Blomsterhage.png);
+        background-size: cover;
+        border-radius: 10px;
+        cursor:pointer;
+        filter: brightness(90%);
+    }
+    #overskrift3{
+        filter: brightness(100%);
+        color:rgb(255, 255, 255);
+        margin:0px;
+        text-shadow: 0px 5px 20px black;
+        font-size: 20px;
+        font-family: var(--Overskrifts-font);
+    }
+
+    
+    
+    .bakgrunnsconteiner{
+        background-image: url(Bilder/Blomstereng.png);
+        background-size: cover;
+        background-position:center 30%;
+        
+        block-size: 60px;
+    }
+
+    .CardGrid{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    grid-row: 7;
+    row-gap: 0;
+    column-gap: 0;
+    }
+
+    .Card{
+    background-color: var(--Nyanse1);
+    box-shadow: var(--Skygge);
+    border-radius: 20px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:baseline;
+    
+    padding:20px;
+    margin:12px;
+
+    width:100%;
+    padding-top:0;
+    flex-direction: column;
+    height: 175px;
+    padding-left:25px;
+    }   
+
+    .Knapper{
+    border-radius: 5px;
+    border-style:none;
+    box-shadow: var(--Skygge);
+    background-color: var(--Nyanse2);
+    padding:10px;
+    width: 100px;
+    height: 40px;
+    font-family: var(--Knappe-font);
+    font-weight:bold;
+    font-size: 15px;
+    color:black;
+    }
+
+    .tekst{
+    width: 95%;
+    color: var(--subtext-color);
+    font-family: var(--Underskrifts-font);
+    width: 90%;
+    }
+
+    .KortBilde{
+        width:130px;
+    }
+
+    .SpanGrid{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .overskrift4{
+    color: var(--heading-color);
+    font-family:var(--Overskrifts-font);
+    block-size: 10%;
+    }
+
+    .Kasse{
+        font-size: 14px;
+        border-style: solid;
+        border-radius: 10px;
+        height: 40px;
+        padding:6px;
+        border-color: var(--Nyanse2);
+        box-shadow: var(--Skygge);
+        font-family: var(--Underskrifts-font);
+        color:var(--subtext-color);
+        margin:10px;
+    }
+
+    #Sitatboks{
+        grid-row: 3;
+    }
+
+    #Sitatboks:before{
+        content:"Dagens Sitat: ";
+        font-weight: bold;
+        color: rgb(66, 63, 63);
+    }
+
+    .blokk{
+        block-size: 70px;
+    }
+
+    #Faktablokk{
+        margin-top:10px;
+    }
+
+    #Faktaboks{
+        grid-row:10;
+        padding-left:7px;
+    }
+
+    #Faktaboks:before{
+        content:"Fakta: ";
+        font-weight: bold;
+        color: rgb(66, 63, 63);
+    }
+
+    .Treboks{
+        grid-row: 9;
+        align-items: center;
+        display:flex;
+        flex-direction: row;
+        justify-content:space-around;
+    }
+
+    .Tresorter{
+        display: flex;
+        grid-row: 8;
+        justify-content: space-between;
+        margin-top:0;
+    }
+
+    .KildeNO{
+        color:black;
+        text-decoration: none;
+    }
+    
+}
+
+/* === Desktop === */
+@media (min-width:450px){
+    body{
+        background-color: var(--bgFarge);
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/global.css">
+    <link rel="stylesheet" href="/CSS/Articles.css">
+    <title>Stengel & Stamme</title>
+</head>
+<body>
+    <div class="CardGrid">
+        <span class="Card">
+            <h1 class="overskrift4">Stengel 🌱</h1>
+            <span class="SpanGrid">
+                <p class="tekst">Stengelen (stammen hos trær) gir planten mekanisk støtte og sørger for transport mellom røtter og blader.</p>
+                <p class="tekst">Stengelen består av en <mark id="Marked">sentralsylinder</mark> som inneholder ledningsvev.</p>
+                <img class="Bilde" src="/Bilder/Sentralsylinder.webp">
+                <p class="Bildetekst">URL: Ilustrasjon av Sentralsylinderen</p>
+                <hr>
+                <p class="tekst"><b>Ledningsvev: </b>Plantenes transportsystem. Består av rør (Vedrør og Silrør) som frakter stoffer rundt i planten.</p>
+
+                
+            </span>
+        </span>
+    </div>
+
+    <div id="Oppsummering" class="CardGrid">
+        <span class="Kort">
+            <h3 class="overskrift4">Kort Oppsummert: </h3>
+            <ul id="Liste" class="overskrift4">
+                <li>Vedrør frakter vann og mineraler</li>
+                <li>Silrør frakter sukker og næring</li>
+                <li></li>
+                <li></li>
+            </ul>
+        </span>
+    </div>
+
+    <div id="Quiz" class="CardGrid">
+        <span class="Kort">
+            <h3 class="overskrift4">Quiz / Test deg selv</h3>
+        
+        <div class="question">
+            <p class="overskrift4">Hva er hovedoppgaven til stengel/stamme hos en plante?</p>
+            <span class="Valg"><input name="q1" value="Produsere frø" type="radio"><label>Produsere frø</label></span>
+            <span class="Valg"><input name="q1" value="Ta opp vann fra jorda" type="radio"><label>Ta opp vann fra jorda</label></span>
+            <span class="Valg"><input name="q1" value="Fungere som støtte og transport" type="radio"><label>Fungere som støtte og transport</label></span>
+            <span class="Valg"><input name="q1" value="Utføre fotosyntese" type="radio"><label>Utføre fotosyntese</label></span>
+        </div>
+        
+        <div class="question">
+            <p class="overskrift4">Hva er funksjonen til sentralsylinderen i stengelen?</p>
+            <span class="Valg"><input name="q2" value="Beskytte planten" type="radio"><label>Beskytte planten</label></span>
+            <span class="Valg"><input name="q2" value="Lagre luft" type="radio"><label>Lagre luft</label></span>
+            <span class="Valg"><input name="q2" value="Ta opp karbondioksid" type="radio"><label>Ta opp karbondioksid</label></span>
+            <span class="Valg"><input name="q2" value="Transporere vann og næringsstoffer" type="radio"><label>Transporere vann og næringsstoffer</label></span>
+        </div>
+        <br>
+
+        <button onclick="Stengel()">Sjekk Svar</button>
+        <p id="result"></p>
+        </span>
+    </div>
+
+    <script src="/JavaScript/Articles.js"></script>
+
+</body>
+</html>
