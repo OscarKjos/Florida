@@ -1,0 +1,83 @@
+
+/* === Mobil (standard) === */
+
+@Media (max-width:450px){
+
+    Body{
+        display:grid;
+        grid-template-rows: 50px 1fr 100px;
+        height: 100vh;
+        margin:0;
+    }
+
+    .Layout2{
+        grid-row: 2;
+    }
+
+    #overskrift{
+        text-align:left;
+        margin-top:0;
+        margin-left:10px;
+        block-size: 40px;
+    }
+
+    .Gridboks{
+        grid-row: 2;
+        align-items: center;
+        display:flex;
+        flex-direction: row;
+        justify-content:space-around;
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    .Flexboks{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .Bilde{
+        width: 100px;
+        border-radius: 20px;
+    }
+
+    .Tekst{
+        font-size: 10px;
+        font-family: var(--Overskrifts-font);
+    }
+
+    .Knapp{
+        height: 130px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #overskrift2{
+        font-size: 20px;
+        margin-left:10px;
+        font-family: var(--Overskrifts-font);
+    }
+
+    .Veiledning{
+        display: flex;
+        grid-row: 2;
+        justify-content: space-between;
+        margin:5px;
+    }
+
+    #Veiledningknapp{
+        font-size: 20px;
+        height: 30px;
+        margin-right:10px;
+    }
+
+}
+
+/* === Desktop === */
+@media (min-width:450px){
+    body{
+        background-color: var(--bgFarge);
+    }
+}

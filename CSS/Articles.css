@@ -1,0 +1,128 @@
+/* === Mobil (standard) === */
+
+@media (max-width:450px){
+    Body{
+        background-color:whitesmoke;
+        display: grid;
+        grid-template-rows: 1fr 280px 450px 70px;
+    }
+
+    .Bilde{
+        width:100%;
+        
+    }
+
+    .CardGrid{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    grid-row: 1;
+    row-gap: 0;
+    column-gap: 0;
+    }
+
+    .Card{
+    background-color: var(--Nyanse1);
+    box-shadow: var(--Skygge);
+    border-radius: 20px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:baseline;
+    
+    padding:20px;
+    margin:12px;
+
+    width:100%;
+    padding-top:0;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-left:25px;
+    }   
+
+    .tekst{
+    width: 95%;
+    color: var(--subtext-color);
+    font-family: var(--Underskrifts-font);
+    margin-top:0;
+    }
+
+    .overskrift4{
+    color: var(--heading-color);
+    font-family:var(--Overskrifts-font);
+    block-size: 10%;
+    }
+
+    .Kort{
+    background-color: var(--Nyanse1);
+    box-shadow: var(--Skygge);
+    border-radius: 20px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:baseline;
+    
+    padding:20px;
+    margin:12px;
+
+    width:100%;
+    padding-top:0;
+    min-height: 180px;
+    padding-left:25px;
+    }
+
+    #Oppsummering{
+    grid-row: 2;
+    }
+
+    #Liste{
+        display:flex;
+        justify-content: baseline;
+        padding-left:20px;
+        flex-wrap: wrap;
+        gap:7px;
+        margin-top:1px;
+    }
+
+    #Quiz{
+    grid-row: 3;
+    }
+
+    .Valg{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Bildetekst{
+    width: 100%;
+    font-size: smaller;
+    font-style: italic;
+    text-align: center;
+    margin-top:0;
+    color: var(--subtext-color);
+    font-family: var(--Underskrifts-font);
+    margin-top:0;
+    }
+
+    #result{
+       font-family: var(--Underskrifts-font);
+       font-size: 14px;
+    }
+
+    #Marked{
+        border-radius: 5px;
+        background-color: rgb(241, 241, 119);
+        color:var(--Marked-color);
+    }
+
+    #Eksempel{
+        margin-left:8%;
+    }
+
+    .Intern{
+        text-decoration: none;
+        color: #1a73e8;
+    }
+
+}

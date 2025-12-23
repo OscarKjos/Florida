@@ -1,0 +1,60 @@
+:root{
+    --bgFarge:#e6e6e6;
+    --Nyanse1:#f2f2f2;
+    --Nyanse2:#ffffff;
+    --Skygge:0px 8px 20px rgba(0, 0, 0, 0.12);
+    --Gradient:linear-gradient(#e6e6e6,#ffffff);
+    --Hover:#ededed;
+    --Hover2:#e3e3e3;
+    --Hover-tekst:black;
+    --heading-color: #1f2933;
+    --subtext-color: #6b7280;
+    --Overskrifts-font:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    --Underskrifts-font:"Roboto", system-ui, sans-serif;
+    --Knappe-font: sans-serif;
+    --Marked-color:rgb(30, 28, 28);
+}
+
+@media (prefers-color-scheme: dark){
+    
+}
+
+
+@media (max-width:450px){
+    body{
+        background-color: var(--bgFarge);
+    }
+
+    .Navbar{
+        position:fixed;
+        bottom:0%;
+        left:38%;
+        transform: translateX(-50%);
+    }
+
+    .Navicon{
+        display:flex;
+        flex-direction: row;
+        font-family: var(--Underskrifts-font);
+        font-size: 15px;
+    }
+    
+    #strek{
+        width:130%;
+    }
+
+    #NavColor{
+        background-color: var(--Nyanse2);
+        width:130%;
+        height: 100%;
+    }
+
+    .Iconflex{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        text-decoration: none;
+        color:black;
+    }
+
+}
