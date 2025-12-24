@@ -6,7 +6,7 @@
     body{
         background-color:var(--bgFarge);
         display:grid;
-        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto 100px;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto 100px;
         height: 100vh;
         margin:0;
     }
@@ -78,8 +78,7 @@
         margin-right:10px;
     }
 
-    #Blomster{
-        grid-row: 6;
+    .Blomster{
         margin:8px;
         margin-top:20px;
         height: clamp(50px,15vw,60px);
@@ -90,6 +89,17 @@
         cursor:pointer;
         filter: brightness(90%);
     }
+
+    #BlomsterEng{
+        grid-row: 6;
+    }
+
+    #PoliBilde{
+        grid-row: 11;
+        background-image: url(Bilder/Bakgrunnsbilde2.webp);
+        background-position:50% 5%;
+    }
+
     #overskrift3{
         filter: brightness(100%);
         color:rgb(255, 255, 255);
@@ -157,6 +167,7 @@
     font-family: var(--Underskrifts-font);
     width: 90%;
     font-size: clamp(15px, 5vw, 25px);
+    margin-top:0;
     }
 
     .KortBilde{
@@ -206,7 +217,7 @@
     }
 
     #Faktaboks{
-        grid-row:13;
+        grid-row:14;
         padding-left:7px;
         font-size: clamp(14px, 4vw, 20px);
     }
@@ -227,13 +238,12 @@
 
     .Polinatorer{
         display: flex;
-        grid-row: 11;
+        grid-row: 12;
         justify-content: space-between;
-        margin-top:10px;
     }
     
     .Pollinatorboks{
-        grid-row: 12;
+        grid-row: 13;
         align-items: center;
         display:flex;
         flex-direction: row;
