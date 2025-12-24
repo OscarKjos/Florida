@@ -1,20 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../CSS/Pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <title>Pollinatorer</title>
 </head>
 <body>
-    <h1>Pollinatorer</h1>
+    <h1 id="MainOverskrift">Pollinatorer</h1>
+    <main class="Layout2">
+    <div class="Veiledning">
+        <h1 id="overskrift2">Blomster & Planter</h1>
+        <button id="Veiledningknapp">➤</button>
+    </div>
+    </main>
 
-    <img id="Bilde" src="../Bilder/Honningbie.webp">
-    <img id="Bilde" src="../Bilder/Jordhumle.webp">
-    <img id="Bilde" src="../Bilder/Neslesommerfugl.webp">
-    <img id="Bilde" src="../Bilder/Keiserkåpe.webp">
-    <img id="Bilde" src="../Bilder/Pelsbie.webp">
-    <img id="Bilde" src="../Bilder/Jordveps.webp">
+
+    <div class="CardGrid">
+    <span class="MainCard">
+        <button class="ImgCard">
+        <img id="Bilde" src="../Bilder/Honningbie.webp">
+        <h1 class="Artsnavn">Honningbie</h1>
+        </button>
+        <span class="Beskrivelse">
+        <p id="Tekst"><b>Latinsk Navn:</b> Apis mellifera</p>
+        <p id="Tekst"><b>Type:</b> Bie</p>
+        <p id="Tekst"><b>Fav-Blomst:</b> Frukttrær, kløver, løvetann, urter</p>
+        <p id="Tekst"><b>Status:</b> Vanlig i Norge</p>
+        </span>
+    </span>
+    
+    <span id="MainReverse" class="MainCard">
+        <button class="ImgCard">
+        <img id="Bilde" src="../Bilder/Jordhumle.webp">
+        <h1 class="Artsnavn">Jordhumle</h1>
+        </button>
+        <span id="BeskRevers" class="Beskrivelse">
+        <p id="Tekst"><b>Latinsk Navn:</b> Bombus terrestris</p>
+        <p id="Tekst"><b>Type:</b> Humle</p>
+        <p id="Tekst"><b>Fav-Blomst:</b> Tistel, kløver, krokus, lavendel</p>
+        <p id="Tekst"><b>Status:</b> Vanlig i Norge</p>
+        </span>
+    </span>
+
+    <span class="MainCard">
+        <button class="ImgCard">
+        <img id="Bilde" src="../Bilder/Neslesommerfugl.webp">
+        <h1 class="Artsnavn">Neslesommerfugl</h1>
+        </button>
+        <span class="Beskrivelse">
+        <p id="Tekst"><b>Latinsk Navn:</b> Aglais urticae</p>
+        <p id="Tekst"><b>Type:</b> Sommerfugl</p>
+        <p id="Tekst"><b>Fav-Blomst:</b> Løvetann, blåbær, rødkløver, bjørkekoll</p>
+        <p id="Tekst"><b>Status:</b> Vanlig i Norge</p>
+        </span>
+    </span>
+
+    <span id="MainReverse" class="MainCard">
+        <button class="ImgCard">
+        <img id="Bilde" src="../Bilder/Keiserkåpe.webp">
+        <h1 class="Artsnavn">Keiserkåpe</h1>
+        </button>
+        <span id="BeskRevers" class="Beskrivelse">
+        <p id="Tekst"><b>Latinsk Navn:</b> Argynnis paphia</p>
+        <p id="Tekst"><b>Type:</b> Sommerfugl</p>
+        <p id="Tekst"><b>Fav-Blomst:</b> Skogsbærblomster, rips og blåbær</p>
+        <p id="Tekst"><b>Status:</b> Vanlig i Norge</p>
+        </span>
+    </span>
+
+    <span class="MainCard">
+        <button class="ImgCard">
+        <img id="Bilde" src="../Bilder/Pelsbie.webp">
+        <h1 class="Artsnavn">Pelsbie</h1>
+        </button>
+        <span class="Beskrivelse">
+        <p id="Tekst"><b>Latinsk Navn:</b> Anthophora plumipes</p>
+        <p id="Tekst"><b>Type:</b> Bie</p>
+        <p id="Tekst"><b>Fav-Blomst:</b> Frukttrær, blåklokker, hageblomster</p>
+        <p id="Tekst"><b>Status:</b> Vanlig i Norge</p>
+        </span>
+    </span>
+
+    <span id="MainReverse" class="MainCard">
+        <button class="ImgCard">
+        <img id="Bilde" src="../Bilder/Jordveps.webp">
+        <h1 class="Artsnavn">Jordveps</h1>
+        </button>
+        <span id="BeskRevers" class="Beskrivelse">
+        <p id="Tekst"><b>Latinsk Navn:</b> Vespula vulgaris</p>
+        <p id="Tekst"><b>Type:</b> Veps</p>
+        <p id="Tekst"><b>Fav-Blomst:</b> Frukttrær, bærbusker</p>
+        <p id="Tekst"><b>Status:</b> Vanlig i Norge</p>
+        </span>
+    </span>
+
+    </div>
+
+    <!--
+    <div class="Resten">
     <img id="Bilde" src="../Bilder/Åkerhumle.webp">
     <img id="Bilde" src="../Bilder/Engringvinge.webp">
     <img id="Bilde" src="../Bilder/Blomsterflue.webp">
@@ -26,7 +113,20 @@
     <img id="Bilde" src="../Bilder/Svettebie.webp">
     <img id="Bilde" src="../Bilder/Blå_Snekkerbie.webp">
     <img id="Bilde" src="../Bilder/Aurorasommerfugl.webp">
+    </div>
+    -->
+    <nav class="Navbar">
+        <div id="NavColor">
+            <hr id="strek">
+            <ul class="Navicon">
+                <ul><a class="Iconflex" href="../index.html"><i class="fas fa-home"></i>Hjem</a></ul>
+                <ul><a class="Iconflex" href="../HTML/Katalog.html"><i class="fas fa-seedling"></i>Katalog</a></ul>
+                <ul><a class="Iconflex" href="../HTML/Teori.html"><i class="fas fa-book"></i>Teori</a></ul>
+                <ul><a class="Iconflex" href="../HTML/Brukerprofil.html"><i class="fas fa-user"></i>Profil</a></ul>
+            </ul>
+        </div>
+    </nav>
 
-
+    <div class="space"></div>
 </body>
 </html>
