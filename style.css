@@ -6,7 +6,7 @@
     body{
         background-color:var(--bgFarge);
         display:grid;
-        grid-template-rows: auto auto auto auto auto auto auto auto auto auto 100px;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto 100px;
         height: 100vh;
         margin:0;
     }
@@ -134,7 +134,6 @@
     width:100%;
     padding-top:0;
     flex-direction: column;
-    height: 175px;
     padding-left:25px;
     }   
 
@@ -157,6 +156,7 @@
     color: var(--subtext-color);
     font-family: var(--Underskrifts-font);
     width: 90%;
+    font-size: clamp(15px, 5vw, 25px);
     }
 
     .KortBilde{
@@ -206,7 +206,7 @@
     }
 
     #Faktaboks{
-        grid-row:10;
+        grid-row:13;
         padding-left:7px;
         font-size: clamp(14px, 4vw, 20px);
     }
@@ -225,6 +225,21 @@
         justify-content:space-around;
     }
 
+    .Polinatorer{
+        display: flex;
+        grid-row: 11;
+        justify-content: space-between;
+        margin-top:10px;
+    }
+    
+    .Pollinatorboks{
+        grid-row: 12;
+        align-items: center;
+        display:flex;
+        flex-direction: row;
+        justify-content:space-around;
+    }
+
     .Tresorter{
         display: flex;
         grid-row: 8;
@@ -236,6 +251,16 @@
         color:black;
         text-decoration: none;
     }
+
+    #GridBy{
+        grid-row: 10;
+        margin-top: 13px;
+    }
+
+    #Rotbilde{
+        width: 130px;
+    }
+
 }
 
 @media (max-width:400px){
