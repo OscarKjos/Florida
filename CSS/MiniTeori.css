@@ -1,0 +1,204 @@
+@Media (max-width:450px){
+
+body{
+    display:grid;
+    grid-template-rows: 80px auto 100px;
+    height: 100vh;
+    margin:0;
+}
+
+.BodyDif{
+    background: radial-gradient(circle at top, #f7f9fc, #eef2f7);
+}
+
+
+.GridOverbar{
+    display: flex;
+    flex-direction: column;
+}
+
+.Sammenleggbar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width:90%;
+    margin:13px;
+    box-shadow: var(--Skygge);
+    cursor:pointer;
+    touch-action: manipulation; /*Forhindrer dobbeltrykk*/
+}
+
+.Spørsmål{
+    width: 115%;
+    min-height: 40px;
+    font-size: 14px;
+    color:black;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: white;
+}
+
+.Svar{
+    width:115%;
+    border-radius: 5px;
+    height: 0;
+    background-color: var(--Nyanse2);
+    box-shadow: var(--Skygge);
+    overflow: hidden;
+}
+
+.Svar.open{
+    height: 100%;
+}
+
+.Spørsmål.aktiv{
+    border-radius: 0px;
+    background-color: aliceblue;
+}
+
+#MiniOverskrift{
+    text-align: center;
+}
+
+#CardOverskrift{
+    text-align:center;
+    border-radius: 5px;
+    height: auto;
+    margin:0;
+    color: var(--heading-color);
+    box-shadow: 0px 5px 5px white;
+    background-color: rgba(255, 255, 255, 0.86);
+    font-weight:600;
+    font-size: 16px;
+}
+
+#Forktekst{
+    margin-left:15px;
+    width:90%;
+    text-align: center;
+}
+
+.space{
+    grid-row: 3;
+}
+
+.Gridlosebar{
+    display: flex;
+    flex-direction: column;
+    gap:17px;
+}
+
+.TemaCard{
+    padding:10px;
+    background-color: var(--Nyanse2);
+    border-radius: 20px;
+    border-style:solid;
+    box-shadow: 2px 5px 0px rgb(191, 188, 188);
+    border-color:white;
+}
+
+.MainCard{
+    padding:10px;
+    border-radius: 20px;
+    border-style:solid;
+    box-shadow: 2px 5px 0px rgb(191, 188, 188);
+    border-color:white;
+    cursor: pointer;
+    width:35%;
+    height: 160px;
+    background-position: center;
+    background-size: cover;
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.Bilde{
+    border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
+    box-shadow: var(--Skygge);
+}
+
+.Bilde2{
+    width:100%;
+}
+
+#Felix1{
+    background-image: url(../Bilder/Hagestell1.webp);
+    position:relative;
+}
+
+#Felix2{
+    background-image: url(../Bilder/Vanntransport.webp);
+    position:relative;
+}
+
+#Felix3{
+    background-image: url(../Bilder/Tilpasning2.webp);
+    position:relative;
+}
+
+#Felix4{
+    background-image: url(../Bilder/Fotosyntesen2.webp);
+    position:relative;
+}
+
+#Felix5{
+    background-image: url(../Bilder/Jord2.webp);
+    position:relative;
+}
+
+#Felix6{
+    background-image: url(../Bilder/Klima3.webp);
+    position:relative;
+}
+
+#Felix7{
+    background-image: url(../Bilder/Økologi2.webp);
+    position:relative;
+}
+
+#Felix8{
+    background-image: url(../Bilder/Årstider.webp);
+    position:relative;
+}
+
+#Felix9{
+    background-image: url(../Bilder/Celler2.webp);
+    position:relative;
+}
+
+#Felix10{
+    background-image: url(../Bilder/Rota.webp);
+    background-repeat: no-repeat;
+    background-size: 108%;
+    position:relative;
+}
+
+.Gridlosebar{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#IconIMG{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+
+    position: absolute;
+    bottom:86%;
+    left:84%;
+}
+
+.space{
+    height:70px;
+    width:100%;
+    grid-row: 2;
+}
+}

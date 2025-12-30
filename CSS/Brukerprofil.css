@@ -2,14 +2,161 @@
 /*______________________________Mobil (Standard)___________________________*/
 @media (max-width:450px){
     body{
-        background-color: var(--bgFarge);
+        background-image: url(../Bilder/Backround4.webp);
+        background-position: center;
+        background-size: 120%;
+        background-color:rgba(241, 241, 233, 0.687);
+    }
+
+    .Oppdatering{
+        border-style: solid;
+        border-color: rgb(37, 109, 37);
+        border-width: 1px;
+        border-radius: 18px;
+        margin:15px;
+        width: 100%;
+        background-color: var(--Nyanse1);
+        box-shadow: var(--Skygge);
+    }
+
+    .Systemoppdateringer{
+        display:flex;
+        flex-wrap: wrap;
+        
+    }
+
+    .OppdateringHeader{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin:8px;
+        column-gap:25px;
+        font-size: 0.8rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color:rgb(26, 45, 26);
+    }
+
+    #Systemoverskrift{
+        text-align: center;
+        margin-bottom:0;
+        font-family:var(--Overskrifts-font);
+        background-image: url(../Bilder/Backround2.webp);
+        background-position: center;
+        background-size: 105%;
+        margin:0;
+        padding:10px;
+        border-top-right-radius: 18px;
+        border-top-left-radius: 18px;
+        color:whitesmoke;
+        text-shadow: 0px 0px 10px black;
+        font-size: 16px;
+        
+    }
+
+    .Endringer{
+        display:flex;
+        flex-direction: column;
+        margin:0;
+        font-size:13px;
+        color:var(--heading-color);
+        gap:7px;
+    }
+
+    .Endring2{
+        display:flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        font-size:13px;
+        gap:8px;
+        margin-left:5px;
+        height: 50px;
+
+        background-image: url(../Bilder/Backround3.webp);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-bottom-right-radius: 18px;
+        border-bottom-left-radius: 18px;
+    }
+
+    .InsideEndring{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        column-gap: 18px;
+    }
+
+    #IconPotte{
+        font-size: 35px;
+    }
+
+    .OppDa{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .space{
+    height:70px;
+    width:100%;
+    grid-row: 2;
+    }
+    #FareBilde{
+        width:20%;
     }
 
     #varsling{
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
         text-align: center;
     }
+
+    #Nød1{
+        margin:0;
+        font-family: var(--Overskrifts-font);
+        font-size: 22px;
+        color:var(--heading-color)
+
+    }
+
+    #Nød2{
+        font-size: 15px;
+        color:rgb(64, 63, 63);
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+    }
+
+    .Mellomrom{
+        color:rgb(250, 244, 244);
+    }
+
+    #Mellomrom1{
+        color:rgb(250, 244, 244);
+        margin-bottom: 0;
+    }
+
+    #Dott{
+        font-size: 20px;
+    }
+
+    #OverSystem{
+        margin-left:15px;
+        font-size: 16px;
+        color:rgb(30, 74, 30);
+        font-weight: bold;
+    }
+
+    #SystemFlex{
+        display: flex;
+        flex-direction: column;
+        row-gap: 6px;
+    }
+
+
+
 }
 
 /*______________________________Desktop____________________________________*/

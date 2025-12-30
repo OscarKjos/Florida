@@ -271,17 +271,191 @@
         width: 130px;
     }
 
-}
-
-@media (max-width:400px){
     #Hidden{
+        display:none;
+    }
+
+    #ONLYPC{
         display:none;
     }
 }
 
+@media (min-width: 400px) and (max-width: 450px) {
+    #Hidden{
+        display:block;
+    }
+}
+
+
+
+
 /* === Desktop === */
 @media (min-width:450px){
     body{
-        background-color: var(--bgFarge);
+        display:grid;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto 100px;        
+        grid-template-columns: 200px 5fr 300px;
+        height: 100vh;  
+        margin:0;
+    }
+
+    #overskrift{
+        grid-row:1;
+        grid-column:2;
+        text-align: center;
+        font-family: var(--Overskrifts-font);
+    }
+    
+    #Hovedbilde{
+        grid-row: 2;
+        grid-column: 2;
+        width: 100%;
+    }
+
+    .Gridboks{
+        display:none;
+    }
+
+    .Flexboks{
+        display:none;
+    }
+
+    .Bilde{
+        display:none;
+    }
+
+    .Tekst{
+        display:none;
+    }
+
+    .Knapp{
+        display:none;
+    }
+
+    #overskrift2{
+        display:none;
+    }
+
+    .Veiledning{
+        display:none;
+    }
+
+    #Veiledningknapp{
+        display:none;
+    }
+
+    .Blomster{
+        display:none;
+    }
+
+    #BlomsterEng{
+        display:none;
+    }
+
+    #PoliBilde{
+        display:none;
+    }
+
+    #overskrift3{
+        display:none;
+    }
+
+    .bakgrunnsconteiner{
+        background-image: url(Bilder/Blomstereng.png);
+        background-size: cover;
+        background-position:center 35%;
+    }
+
+    .CardGrid{
+        display:none;
+    }
+
+    .Card{
+        display:none;
+    }   
+
+    .Knapper{
+        display:none;
+    }
+
+    .tekst{
+        display:none;
+    }
+
+    .KortBilde{
+        display:none;
+    }
+
+    .SpanGrid{
+        display:none;
+    }
+
+    .overskrift4{
+        display:none;
+    }
+
+    .Kasse{
+        display:none;
+    }
+
+    #Sitatboks{
+        display:none;
+    }
+
+    #Sitatboks:before{
+        display:none;
+    }
+
+    .blokk{
+        display:none;
+    }
+
+    #Faktablokk{
+        display:none;
+    }
+
+    #Faktaboks{
+        display:none;
+    }
+
+    #Faktaboks:before{
+        display:none;
+    }
+
+    .Treboks{
+        display:none;
+    }
+
+    .Polinatorer{
+        display:none;
+    }
+    
+    .Pollinatorboks{
+        display:none;
+    }
+
+    .Tresorter{
+        display:none;
+    }
+
+    .KildeNO{
+        display:none;
+    }
+
+    #GridBy{
+        display:none;
+    }
+
+    #Rotbilde{
+        display:none;
+    }
+
+    .Contain{
+        position: fixed;
+        top:0;
+        background-color: #EEF3F9;
+        height: 100vh;
+        width: 100%;
+        border:solid;
     }
 }

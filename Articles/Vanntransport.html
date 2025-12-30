@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../CSS/Articles.css">
+    <title>Vanntransport i planten</title>
+</head>
+<body>
+    <div class="CardGrid">
+        <span class="Card">
+            <h1 class="overskrift4">Vanntransport</h1>
+            <span class="SpanGrid">
+                <p class="tekst">Vanntransport er prosessen der planter frakter vann og mineraler fra røttene til bladene. Dette er nødvendig for fotosyntese, vekst og for å holde planten stiv og oppreist.</p>
+                <img class="Bilde" src="../Bilder/Vanntransport.webp">
+                <p class="Bildetekst">URL: Ilustrasjon av Vanntransport</p>
+                <hr>
+                <h3 class="overskrift4">Vannets Kretsløp</h3>
+                <ol>
+                    <li class="overskrift4">Fra rothårene</li>
+                    <li class="overskrift4">Gjennom barken</li>
+                    <li class="overskrift4">Gjennom innerhuden</li>
+                    <li class="overskrift4">Fra vedrørene og opp til planten</li>                    
+                </ol>
+                <p class="tekst"><b>Rothårene:</b> Vann tas opp i røttene gjennom rothår. Her kommer vannet inn ved osmose, sammen med oppløste mineraler fra jorda.</p>
+                <p class="tekst"><b>Barken:</b> Vannet beveger seg videre gjennom barken, enten gjennom cellene eller mellom dem.</p>
+                <p class="tekst"><b>Innerhud:</b> Innerhuden, som inneholder <mark id="Marked">suberin</mark> i celleveggene, fungerer som en barriere som kontrollerer hvor mye vann og mineraler som slipper inn i ledningsvevet (xylemet). Vannet må passere gjennom cellene her, noe som sikrer at planten kan regulere opptaket.</p>
+                <p class="tekst"><b>Vedrør:</b> Vedrørene (xylemet) frakter vannet og mineralene fra røttene opp gjennom stengelen og ut til bladene. Transporten skjer hovedsakelig ved hjelp av <mark id="Marked">kapillærkrefter</mark></p>
+                <img class="Bilde" src="../Bilder/Vanntransport2.webp">
+                <p class="Bildetekst">URL: Ilustrasjon av Vannets kretsløp</p>
+
+                <hr>
+                <h3 class="overskrift4">3 faktorer for transport</h3>
+                <ol>
+                    <li class="overskrift4">Adehosjon og Kohesjon</li>
+                    <li class="overskrift4">Transpirasjon</li>
+                    <li class="overskrift4">Rottrykk</li>
+                </ol>
+                <p class="tekst"><b>Kapillærkrefter:</b> Kraften som får vann til å stige i tynne rør, som i plantens xylem. Inkluderer Adehosjon- og Kohesjonskrefter</p>
+                <p class="tekst">Følgende krefter kan du lese mer om i våre artikler om <a class="Intern" href="#">Kapillærkrefter</a>, <a class="Intern" href="#">Transpirasjon</a> og <a class="Intern" href="#">Rottrykk</a></p>
+            </span>
+        </span>
+    </div>
+
+    <div id="Oppsummering" class="CardGrid">
+        <span class="Kort">
+            <h3 class="overskrift4">Kort Oppsummert: </h3>
+            <ul id="Liste" class="overskrift4">
+                <li>Vann tas opp fra jorden gjennom rothårene ved osmose.</li>
+                <li>Vannet transporteres gjennom plantens vev fra røtter til blader</li>
+                <li>Transporten drives av transpirasjon, kapillærkrefter og rottrykk.</li>
+            </ul>
+        </span>
+    </div>
+
+    <div id="Quiz" class="CardGrid">
+        <span class="Kort">
+            <h3 class="overskrift4">Quiz / Test deg selv</h3>
+        
+        <div class="question">
+            <p class="overskrift4">Hva transporteres i xylemet i planten?</p>
+            <span class="Valg"><input name="q1" value="Sukker og næringsstoffer" type="radio"><label>Sukker og næringsstoffer</label></span>
+            <span class="Valg"><input name="q1" value="Vann og mineraler" type="radio"><label>Vann og mineraler</label></span>
+            <span class="Valg"><input name="q1" value="Oksygen" type="radio"><label>Oksygen</label></span>
+            <span class="Valg"><input name="q1" value="Karbondioksid" type="radio"><label>Karbondioksid</label></span>
+        </div>
+        
+        <div class="question">
+            <p class="overskrift4">Hva driver vanntransporten oppover i planten?</p>
+            <span class="Valg"><input name="q2" value="Tyngdekraft" type="radio"><label>Tyngdekraft</label></span>
+            <span class="Valg"><input name="q2" value="Fotosyntese" type="radio"><label>Fotosyntese</label></span>
+            <span class="Valg"><input name="q2" value="Transpirasjon" type="radio"><label>Transpirasjon</label></span>
+            <span class="Valg"><input name="q2" value="Vind" type="radio"><label>Vind</label></span>
+        </div>
+        <br>
+
+        <button onclick="Vanntransport()">Sjekk Svar</button>
+        <p id="result"></p>
+        </span>
+    </div>
+
+    <script src="../JavaScript/Articles.js"></script>
+
+</body>
+</html>

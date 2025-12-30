@@ -54,3 +54,17 @@ function Stengel() {
 
   document.getElementById("result").textContent = `Du fikk ${score} / 2 riktige!`;
 }
+
+/*_____________________________Vanntransport______________________________*/
+
+function Vanntransport() {
+  let score = 0;
+
+  const q1 = document.querySelector('input[name="q1"]:checked');
+  const q2 = document.querySelector('input[name="q2"]:checked');
+
+  if (q1 && q1.value === "Vann og mineraler") score++;
+  if (q2 && q2.value === "Transpirasjon") score++;
+
+  document.getElementById("result").textContent = `Du fikk ${score} / 2 riktige!`;
+}

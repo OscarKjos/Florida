@@ -1,16 +1,48 @@
-/* === Mobil (standard) === */
+body{
+    display: grid;
+    grid-template-rows: 60px auto 100px;
+}
 
-@media (max-width:450px){
-    Body{
-        background-color: var(--bgFarge);
-        display:grid;
-        grid-template-rows: 50px 1fr 1fr 5fr 300px;
-        height: 100vh;
-    } 
+.Gridboksen{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:20px;
+    grid-row: 2;
+}
 
-    #overskrift{
-        text-align:left;
+.Cardio{
+    padding:10px;
+    border-radius: 20px;
+    border-style:solid;
+    box-shadow: 0px 0px 5px rgb(63, 62, 62);
+    border-color:white;
+    cursor: pointer;
+    width:90%;
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.Knapp{
+    border-radius: 5px;
+    border-style:none;
+    box-shadow: var(--Skygge);
+    padding:10px;
+    width: 100px;
+    height: 40px;
+    font-family: var(--Knappe-font);
+    font-weight:bold;
+    font-size: 15px;
+}
+
+#overskrift{
         margin-top:0;
+        margin-left:6px;
         block-size: 40px;
         grid-row:1;
         font-family: var(--Overskrifts-font);
@@ -18,119 +50,77 @@
         text-align: center;
     }
 
-    .CardGrid{
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    flex-wrap: wrap;
-    grid-row: 4;
-    row-gap: 0;
-    column-gap: 0;
-    }
-
-    .Card{
-    background-color: var(--Nyanse1);
-    box-shadow: var(--Skygge);
-    border-radius: 20px;
-
-    display:flex;
-    flex-direction:column;
-    align-items:baseline;
-    
-    padding:20px;
-    margin:12px;
-
-    width:100%;
-    padding-top:0;
-    flex-direction: column;
-    padding-left:25px;
-    }
-
-    .Knapper{
-    border-radius: 5px;
-    border-style:none;
-    box-shadow: var(--Skygge);
-    background-color: var(--Nyanse2);
+#FiksIMG1{
+    background-image: url(../Bilder/Card.webp);
+    background-position: top;
+    border-style: none;
     padding:10px;
-    width: 100px;
-    height: 40px;
-    font-family: var(--Knappe-font);
-    font-weight:bold;
-    font-size: 15px;
-    color:black;
-    }
-
-    .tekst{
-    width: 95%;
-    color: var(--subtext-color);
-    font-family: var(--Underskrifts-font);
-    width: 90%;
-    font-size: clamp(15px, 5vw, 25px);
-    margin-top:0;
-    }
-    .overskrift4{
-    color: var(--heading-color);
-    font-family:var(--Overskrifts-font);
-    block-size: 10%;
-    }
-
-    .Bilde{
-        width: 130px;
-        max-height: 130px;
-    }
-
-    #Midtstillt{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-    }
-
-    .SpanGrid{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .Forklaring{
-        grid-row: 2;
-        font-family: var(--Underskrifts-font);
-        color:var(--subtext-color);
-        margin-top:0;
-        margin-left:10px;
-        text-align: center;
-    }
-
-    .Bilde2{
-        max-width:100%;
-        max-height: 100%;
-    }
-
-    .space{
-        block-size: 100px;
-        grid-row: 5;
-    }
-
-    .KildeNO{
-        color:black;
-        text-decoration: none;
-    }
-
-    .Utilgjengelig{
-        position:flex;
-        background-color: rgba(92, 90, 90, 0.675);
-        left:20px;
-        border-radius: 10px;
-        width: 100%;
-        text-align: center;
-        color: whitesmoke;
-        margin-top:14px;
-    }
 }
 
-/* === Desktop === */
+#FiksIMG2{
+    background-image: url(../Bilder/Card2.webp);
+    background-position: top;
+    
+}
 
-@media (min-width:450px){
-    body{
-        background-color: var(--bgFarge);
-    }
+#FiksIMG3{
+    background-image: url(../Bilder/Card3.webp);
+    background-position: top;
+}
+
+.Notekst{
+    text-decoration: none;
+    color: white;
+    font-family: var(--Overskrifts-font);
+    font-size: 15px;
+    width:50%;
+    text-shadow: 0px 0px 10px black;
+    margin-left:5px;
+}
+
+#MTekst1{
+    margin:5px;
+    color:white;
+}
+
+#MTekst2{
+    margin:5px;
+    color:var(--heading-color);
+}
+
+#MTekst3{
+    margin:5px;
+    color:var(--heading-color);
+}
+
+.HeadSkrift{
+    margin:0;
+    padding:0;
+    font-size: 25px;
+    text-align: center;
+    font-family: var(--Overskrifts-font);
+}
+
+#Button1{
+    background-color: rgb(103, 157, 103);
+    color:rgb(255, 255, 255);
+}
+
+#Button2{
+    background-color: #F2C94C;
+    color:var(--heading-color);
+}
+
+#Button3{
+    background-color: #5B8FD9;
+    color:rgb(255, 255, 255);
+}
+
+#OverGrid{
+    grid-row: 1;
+}
+
+#UTekst{
+    color:rgb(72, 69, 69);
+    text-shadow: 0px 0px 10px white;
 }

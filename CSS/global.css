@@ -18,12 +18,12 @@
 @media (prefers-color-scheme: dark){
     
 }
-
-
 @media (max-width:450px){
     body{
         background-color: var(--bgFarge);
     }
+
+    /*_______________________Navigationbar________________________*/
 
     .Navbar{
         position:fixed;
@@ -57,4 +57,78 @@
         color:black;
     }
 
+    /*_______________________Articles & MiniTeori________________________*/
+
+    .overskrift4{
+    color: var(--heading-color);
+    font-family:var(--Overskrifts-font);
+    block-size: 10%;
+    }
+
+    .tekst{
+    width: 95%;
+    color: var(--subtext-color);
+    font-family: var(--Underskrifts-font);
+    margin-top:0;
+    font-size: clamp(15px, 5vw, 25px);
+    }
+
+
+}
+
+@media (min-width:450px){
+    body{
+        background-color: var(--bgFarge);
+        margin:0;
+    }
+
+    .Navbar{
+        display:flex;
+        background-color: var(--Nyanse2);
+        grid-column: 1;
+        grid-row: 1/16;
+        background-color:  #EEF3F9;
+        border: solid;
+        border-color: #2E3A4F;
+
+    }
+
+    .Navicon{
+        display:flex;
+        flex-direction: column;
+        gap:40px;
+        padding:0;
+        margin:0px;
+        font-family: var(--Overskrifts-font);
+    }
+
+    
+    #strek{
+        display:none;
+    }
+
+
+    .Iconflex{
+        display:flex;
+        flex-direction: row;
+        gap:35px;
+        color:var(--Overskrifts-font);
+        text-decoration: none;
+        justify-content: left;
+
+        padding: 10px;
+        width: 100%;
+        border-radius: 10px;
+        transition: background-color 0.2s;
+    }
+
+    .MainNav{
+        text-align: center;
+        margin-bottom: 0;
+        font-family: var(--Overskrifts-font);
+    }
+
+    .Iconflex:hover {
+        background-color: rgba(0, 0, 0, 0.08);
+    }
 }

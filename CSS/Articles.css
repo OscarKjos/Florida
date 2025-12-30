@@ -2,7 +2,6 @@
 
 @media (max-width:450px){
     Body{
-        background-color:whitesmoke;
         display: grid;
         grid-template-rows: auto auto auto 70px;
     }
@@ -40,20 +39,6 @@
     min-height: 100vh;
     padding-left:25px;
     }   
-
-    .tekst{
-    width: 95%;
-    color: var(--subtext-color);
-    font-family: var(--Underskrifts-font);
-    margin-top:0;
-    font-size: clamp(15px, 5vw, 25px);
-    }
-
-    .overskrift4{
-    color: var(--heading-color);
-    font-family:var(--Overskrifts-font);
-    block-size: 10%;
-    }
 
     .Kort{
     background-color: var(--Nyanse1);
