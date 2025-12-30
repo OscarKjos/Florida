@@ -282,7 +282,7 @@
 
 @media (min-width: 400px) and (max-width: 450px) {
     #Hidden{
-        display:block;
+        display:flex;
     }
 }
 
