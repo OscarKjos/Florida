@@ -46,5 +46,29 @@ function Blomster() {
   prosent = desimaltall*100
 
   document.getElementById("tekst2").textContent = `${prosent} %`;
+}
+
+/*_______________________________Rotsystemet Quiz______________________________*/
+
+function Blomster() {
+  let score = 0;
+
+  const q1 = document.querySelector('input[name="q1"]:checked');
+  const q2 = document.querySelector('input[name="q2"]:checked');
+  const q3 = document.querySelector('input[name="q3"]:checked');
+  const q4 = document.querySelector('input[name="q4"]:checked');
+
+  if (q1 && q1.value === "Ta opp vann og mineraler") score++;
+  if (q2 && q2.value === "Knipperot") score++;
+  if (q3 && q3.value === "Pælerot") score++;
+  if (q4 && q4.value === "Øker overflaten for opptak av vann") score++;
+
+  document.getElementById("result").textContent = `Du fikk ${score} / 4 riktige!`;
+
+  const spørsmål = 4
+  let desimaltall = score / spørsmål
+  prosent = desimaltall*100
+
+  document.getElementById("tekst2").textContent = `${prosent} %`;
 
 }

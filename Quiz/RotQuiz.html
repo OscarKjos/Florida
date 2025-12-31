@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../CSS/Quiz.css">
+    <link rel="stylesheet" href="../CSS/Articles.css">
+    <title>Quiz Navngivelse</title>
+</head>
+<body id="BodyBack">
+    <div id="MainQuiz" class="CardGrid">
+        <span class="Kort" id="QuizKort">
+            <h2 class="overskrift4">Quiz / Test deg selv</h2>
+
+        <div class="question">
+            <p class="overskrift4" id="SpørsTekst">Hva er hovedoppgaven til rotsystemet i planten?</p>
+        <div class="GruppeFlex">
+            <div class="SpørsmålFlex">
+                <span class="Valg"><input name="q1" value="Utføre fotosyntese" type="radio"><label>Utføre fotosyntese</label></span>
+                <span class="Valg"><input name="q1" value="Formere planten" type="radio"><label>Formere planten</label></span>
+                <span class="Valg"><input name="q1" value="Ta opp vann og mineraler" type="radio"><label>Ta opp vann og mineraler</label></span>
+                <span class="Valg"><input name="q1" value="Transportere sukker" type="radio"><label>Transportere sukker</label></span>
+            </div>
+        </div>
+        </div>
+
+        <hr id="Mellomrom">
+
+        <div class="question">
+            <p class="overskrift4" id="SpørsTekst">Hvilken rottype er avbildet her?</p>
+        <div class="GruppeFlex">
+            <div class="SpørsmålFlex">
+                <span class="Valg"><input name="q2" value="Rotabær" type="radio"><label>Rotabær</label></span>
+                <span class="Valg"><input name="q2" value="Pælerot" type="radio"><label>Pælerot</label></span>
+                <span class="Valg"><input name="q2" value="Runderot" type="radio"><label>Runderot</label></span>
+                <span class="Valg"><input name="q2" value="Knipperot" type="radio"><label>Knipperot</label></span>
+            </div>
+                <img class="BlomsterIMG" src="../Bilder/Knipperot.webp">
+        </div>
+        </div>
+
+        <hr id="Mellomrom">
+
+        <div class="question">
+            <p class="overskrift4" id="SpørsTekst">Hvilken rottype er avbildet her?</p>
+        <div class="GruppeFlex">
+            <div class="SpørsmålFlex">
+                <span class="Valg"><input name="q3" value="Rotabær" type="radio"><label>Rotabær</label></span>
+                <span class="Valg"><input name="q3" value="Pælerot" type="radio"><label>Pælerot</label></span>
+                <span class="Valg"><input name="q3" value="Runderot" type="radio"><label>Runderot</label></span>
+                <span class="Valg"><input name="q3" value="Knipperot" type="radio"><label>Knipperot</label></span>
+            </div>
+                <img class="BlomsterIMG" src="../Bilder/Pælerot.webp">
+        </div>
+        </div>
+
+        <hr id="Mellomrom">
+
+        <div class="question">
+            <p class="overskrift4" id="SpørsTekst">Hva gjør rothårene?</p>
+        <div class="GruppeFlex">
+            <div class="SpørsmålFlex">
+                <span class="Valg"><input name="q4" value="Beskytter roten mot skadedyr" type="radio"><label>Beskytter roten mot skadedyr</label></span>
+                <span class="Valg"><input name="q4" value="Transporterer sukker til bladene" type="radio"><label>Transporterer sukker til bladene</label></span>
+                <span class="Valg"><input name="q4" value="Øker overflaten for opptak av vann" type="radio"><label>Øker overflaten for opptak av vann</label></span>
+                <span class="Valg"><input name="q4" value="Utfører celleånding" type="radio"><label>Utfører celleånding</label></span>
+            </div>
+        </div>
+        </div>
+
+        <br>
+            <button id="TestKnapp" onclick="Blomster()">Sjekk Svar</button>
+        </span>
+    </div>
+
+
+    <div class="CardGrid" id="Resultat">
+        <span class="Card" id="ResultatCard">
+            <h2 class="overskrift4">Resultat</h2>
+            <hr id="Mellomrom2">
+            <span class="SpanGrid">
+                <p class="OverResultat" id="tekst2"></p>  
+                <p class="UnderResultat" id="result"></p> 
+            </span>
+        </span>
+    </div>
+
+    <script src="../JavaScript/Quiz.js"></script>
+
+</body>
+</html>
