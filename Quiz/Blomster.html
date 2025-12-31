@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../CSS/Quiz.css">
+    <link rel="stylesheet" href="../CSS/Articles.css">
+    <title>Quiz Navngivelse</title>
+</head>
+<body id="BodyBack">
+    <div id="MainQuiz" class="CardGrid">
+        <span class="Kort" id="QuizKort">
+            <h2 class="overskrift4">Quiz / Test deg selv</h2>
+
+        <div class="question">
+            <p class="overskrift4" id="SpørsTekst">Hvilken blomst er avbildet her?</p>
+        <div class="GruppeFlex">
+            <div class="SpørsmålFlex">
+                <span class="Valg"><input name="q1" value="Solsikke" type="radio"><label>Solsikke</label></span>
+                <span class="Valg"><input name="q1" value="Lavendel" type="radio"><label>Lavendel</label></span>
+                <span class="Valg"><input name="q1" value="Forglemmegei" type="radio"><label>Forglemmegei</label></span>
+                <span class="Valg"><input name="q1" value="Georgine" type="radio"><label>Georgine</label></span>
+            </div>
+                <img class="BlomsterIMG" src="../Bilder/Georgine.webp">
+        </div>
+        </div>
+
+        <hr id="Mellomrom">
+
+        <div class="question">
+            <p class="overskrift4" id="SpørsTekst">Hvilken blomst er avbildet her?</p>
+        <div class="GruppeFlex">
+            <div class="SpørsmålFlex">
+                <span class="Valg"><input name="q2" value="Kornblom" type="radio"><label>Kornblom</label></span>
+                <span class="Valg"><input name="q2" value="Geitrams" type="radio"><label>Geitrams</label></span>
+                <span class="Valg"><input name="q2" value="Liljekonvall" type="radio"><label>Liljekonvall</label></span>
+                <span class="Valg"><input name="q2" value="Fiol" type="radio"><label>Fiol</label></span>
+            </div>
+                <img class="BlomsterIMG" src="../Bilder/Kornblom.png">
+        </div>
+        </div>
+
+        <hr id="Mellomrom">
+
+        <div class="question">
+            <p class="overskrift4" id="SpørsTekst">Hvilken blomst er avbildet her?</p>
+        <div class="GruppeFlex">
+            <div class="SpørsmålFlex">
+                <span class="Valg"><input name="q3" value="Valmue" type="radio"><label>Valmue</label></span>
+                <span class="Valg"><input name="q3" value="Lavendel" type="radio"><label>Lavendel</label></span>
+                <span class="Valg"><input name="q3" value="Delphinium" type="radio"><label>Delphinium</label></span>
+                <span class="Valg"><input name="q3" value="Innerhuden" type="radio"><label>Fuksia</label></span>
+            </div>
+                <img class="BlomsterIMG" src="../Bilder/Lavendel.png">
+        </div>
+        </div>
+
+        <hr id="Mellomrom">
+
+        <div class="question">
+            <p class="overskrift4" id="SpørsTekst">Hvilken blomst er avbildet her?</p>
+        <div class="GruppeFlex">
+            <div class="SpørsmålFlex">
+                <span class="Valg"><input name="q4" value="Vil-løk" type="radio"><label>Vil-løk</label></span>
+                <span class="Valg"><input name="q4" value="Orkide" type="radio"><label>Orkide</label></span>
+                <span class="Valg"><input name="q4" value="Ringblomst" type="radio"><label>Ringblomst</label></span>
+                <span class="Valg"><input name="q4" value="Kattefot" type="radio"><label>Kattefot</label></span>
+            </div>
+                <img class="BlomsterIMG" src="../Bilder/Vil-løk.webp">
+        </div>
+        </div>
+
+        <br>
+            <button id="TestKnapp" onclick="Blomster()">Sjekk Svar</button>
+        </span>
+    </div>
+
+
+    <div class="CardGrid" id="Resultat">
+        <span class="Card" id="ResultatCard">
+            <h2 class="overskrift4">Resultat</h2>
+            <hr id="Mellomrom2">
+            <span class="SpanGrid">
+                <p class="OverResultat" id="tekst2"></p>  
+                <p class="UnderResultat" id="result"></p> 
+            </span>
+        </span>
+    </div>
+
+    <script src="../JavaScript/Quiz.js"></script>
+
+</body>
+</html>

@@ -1,3 +1,101 @@
-#Popup{
-    text-align: center;
-}
+    
+    #Mellomrom{
+        width:100%;
+        margin:0;
+        margin-top:18px;
+        color:rgba(238, 241, 244, 0.037);
+    }
+
+    #Mellomrom2{
+         width:60%;
+         margin-top:0;
+         margin-bottom: 5%;
+    }
+
+    #TestKnapp{
+        background-color: rgb(53, 146, 76);
+        border-radius: 10px;
+        color:whitesmoke;
+        font-size: 18px;
+        padding:9px;
+    }
+    
+    #MainQuiz{
+        grid-row: 1;
+        font-size: clamp(15px, 5vw, 25px);
+    }
+
+    #BodyBack{
+        background-image: url(../Bilder/Backround5.webp);
+        background-position: center;
+        background-size: 90%;
+    }
+
+    #QuizKort{
+        opacity: 80%;
+    }
+
+
+    #Resultat{
+        grid-row: 2;
+    }
+
+    #ResultatCard{
+        min-height: 50px;
+        opacity: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .OverResultat{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        margin-top:0;
+        color: rgb(25, 113, 25);
+        font-weight: bold;
+    }
+
+    .UnderResultat{
+        margin-top:0;
+    }
+
+    #QuizGrid{
+        grid-row:2;
+    }
+
+    #FareGrid{
+        grid-row:1;
+        text-align: center;
+    }
+
+    #BodyGrid{
+        display: grid;
+        grid-template-rows: 150px auto 10px;
+        height: 100vh;
+    }
+
+    .GruppeFlex{
+        display: flex;
+        flex-direction: row;
+        gap:20px;
+    }
+
+    .BlomsterIMG{
+        width:40%;
+        height: 120px;
+    }
+
+    #tekst5{
+        font-size: 15px;
+        width:70%;
+        margin-left:55px;
+    }
+
+    #OverTeksto{
+        margin-bottom: 32px;
+    }
+    

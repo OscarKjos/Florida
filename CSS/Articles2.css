@@ -14,7 +14,7 @@
         block-size: 40px;
         grid-row:1;
         font-family: var(--Overskrifts-font);
-        font-size: 28px;
+        font-size: 32px;
         text-align: center;
     }
 
@@ -89,6 +89,15 @@
     .SpanGrid{
         display: flex;
         flex-direction: row;
+    }
+
+    #Mellomrom{
+        width:100%;
+        margin:0;
+        margin-top:18px;
+        color:rgba(238, 241, 244, 0.037);
+        margin-top:0;
+        margin-bottom: 20px;
     }
 
     .Forklaring{

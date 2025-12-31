@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../CSS/Quiz.css">
+    <link rel="stylesheet" href="../CSS/Articles.css">
+    <title>Quiz Ultimatum</title>
+</head>
+<body id="BodyBack">
+    <div id="MainQuiz" class="CardGrid">
+        <span class="Kort" id="QuizKort">
+            <h2 class="overskrift4">Quiz / Test deg selv</h2>
+
+        <div class="question">
+            <p class="overskrift4" id="SpørsTekst">Hva reffereres til som det ytterste laget på rota?</p>
+            <span class="Valg"><input name="q1" value="Ytterhuden" type="radio"><label>Ytterhuden</label></span>
+            <span class="Valg"><input name="q1" value="Bark" type="radio"><label>Bark</label></span>
+            <span class="Valg"><input name="q1" value="Ledningsvevet" type="radio"><label>Ledningsvevet</label></span>
+            <span class="Valg"><input name="q1" value="Innerhuden" type="radio"><label>Innerhuden</label></span>
+        </div>
+        <hr id="Mellomrom">
+        <div class="question">
+            <p class="overskrift4">Hvilket lag på rota er vann- avstøtende?</p>
+            <span class="Valg"><input name="q2" value="Ytterhuden" type="radio"><label>Ytterhuden</label></span>
+            <span class="Valg"><input name="q2" value="Katikula" type="radio"><label>Katikula</label></span>
+            <span class="Valg"><input name="q2" value="Rothår" type="radio"><label>Rothår</label></span>
+            <span class="Valg"><input name="q2" value="Ledningsvevet" type="radio"><label>Ledningsvevet</label></span>
+        </div>
+
+        <hr id="Mellomrom">
+        <div class="question">
+            <p class="overskrift4">Hvor i planten foregår fotosyntesen?</p>
+            <span class="Valg"><input name="q3" value="Røttene" type="radio"><label>Røttene</label></span>
+            <span class="Valg"><input name="q3" value="Stengelen" type="radio"><label>Stengelen</label></span>
+            <span class="Valg"><input name="q3" value="Bladene" type="radio"><label>Bladene</label></span>
+            <span class="Valg"><input name="q3" value="Blomstene" type="radio"><label>Blomstene</label></span>
+        </div>
+
+        <hr id="Mellomrom">
+        <div class="question">
+            <p class="overskrift4">Hva transporterer xylem i planten?</p>
+            <span class="Valg"><input name="q4" value="Sukker og næring" type="radio"><label>Sukker og næring</label></span>
+            <span class="Valg"><input name="q4" value="Oksygen" type="radio"><label>Oksygen</label></span>
+            <span class="Valg"><input name="q4" value="Vann og mineraler" type="radio"><label>Vann og mineraler</label></span>
+            <span class="Valg"><input name="q4" value="CO₂" type="radio"><label>CO₂</label></span>
+        </div>
+
+        <br>
+            <button id="TestKnapp" onclick="Ultimate()">Sjekk Svar</button>
+        </span>
+    </div>
+
+
+    <div class="CardGrid" id="Resultat">
+        <span class="Card" id="ResultatCard">
+            <h2 class="overskrift4">Resultat</h2>
+            <hr id="Mellomrom2">
+            <span class="SpanGrid">
+                <p class="OverResultat" id="tekst2"></p>  
+                <p class="UnderResultat" id="result"></p> 
+            </span>
+        </span>
+    </div>
+
+    <script src="../JavaScript/Quiz.js"></script>
+
+</body>
+</html>
