@@ -48,6 +48,7 @@
     .Tekst{
         font-size: 10px;
         font-family: var(--Overskrifts-font);
+        color:black;
     }
 
     .Knapp{
