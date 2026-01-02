@@ -6,7 +6,7 @@
     body{
         background-color:var(--bgFarge);
         display:grid;
-        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto 100px;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto 135px;
         height: 100vh;
         margin:0;
     }
@@ -287,6 +287,22 @@
 
     #Rotbilde{
         width: 130px;
+    }
+
+    #Opphavsrett{
+        padding:13px;
+        margin-top:13px;
+        text-align: center;
+        font-family: var(--Overskrifts-font);
+        opacity: 70%;
+        z-index: -1;
+        padding-left:0;
+        border-radius: 20px;
+        border-color:white;
+        border-style: solid;
+
+        background-color:aliceblue;
+        width:94%;
     }
 
     #Hidden{
