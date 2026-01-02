@@ -60,6 +60,8 @@
         border-color: white;
         border-width: 1.5px;
         background-color: transparent;
+        
+        position:relative;
     }
 
     .Knapp:hover{
@@ -123,6 +125,161 @@
         font-size: 20px;
     }
 
+    .Overlay{
+        position: fixed;
+        inset: 0;
+        background: rgb(0 0 0 / 40%);
+        backdrop-filter: blur(6px);
+        
+        display: flex;
+        justify-content:center;
+        align-items:flex-start;
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.3s;
+    }
+
+    .Overlay.open{
+        opacity: 1;
+    }
+
+    .Navbar.remove{
+        opacity: 0;
+    }
+
+    #Blomsterinfo{
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        width:85%;
+        height: 81%;
+        padding:15px;
+        position:relative;
+        margin-top:20px;
+        overflow: hidden;
+    }
+
+    #Lukk{
+        border-radius: 5px;
+        font-size: 25px;
+        font-weight: 600;
+        border-style: none;
+        pointer-events:fill;
+        padding:10px;
+        width:50px;
+        height: 40px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #HeadLukk{
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .KortBilde{
+       width:40%;
+    }
+
+    #KortOverskrift{
+        font-family: var(--Overskrifts-font);
+        margin-top:3px;
+    }
+
+    #FlexKort{
+        display:flex;
+        column-gap:5px;
+        margin-top:0;
+    }
+
+    .FlexBeks{
+        block-size: 30px;
+    }
+
+    #MellomMarg{
+        margin:0;
+    }
+
+    .TekstKort{
+        font-family: var(--Underskrifts-font);
+        margin:10px;
+        font-size: clamp(10px, 4vw, 20px);
+    }
+
+    #IconIMG{
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        font-size: 20px;
+
+        position: absolute;
+        bottom:85%;
+        left:75%;
+    }
+
+    #Latinsk::before{
+        content:"Latinsk: ";
+        font-weight: bold;
+    }
+
+    #Frøtype::before{
+        content:"Frøtype: ";
+        font-weight: bold;
+    }
+
+    #Opprinnelse::before{
+        content:"Opprinnelse: ";
+        font-weight: bold;
+    }
+
+    #Lys::before{
+        content:"Lys: ";
+    }
+
+    #Temperatur::before{
+        content:"Temperatur: ";
+    }
+
+    #Vanning::before{
+        content:"Vanning: ";
+    }
+
+    #Plassering::before{
+        content:"Plassering: ";
+    }
+
+    #Blomstring::before{
+        content:"Blomstringstid: ";
+    }
+
+    #Tidtilblomstring::before{
+        content:"Tid til blomstring: ";
+    }
+
+    #Giftig::before{
+        content:"Giftig: ";
+        font-weight: bold;
+    }
+
+    #Type::before{
+        content:"Type: ";
+        font-weight: bold;
+    }
+
+    #Farger::before{
+        content:"Farger: ";
+        font-weight: bold;
+    }
+
+    #Utbredelse::before{
+        content:"Utbredelse: ";
+        font-weight: bold;
+    }
+
+    #Fakta::before{
+        content:"Fakta: ";
+        font-weight: bold;
+    }
 }
 
 /* === Desktop === */
