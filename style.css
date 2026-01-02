@@ -88,6 +88,12 @@
         height: 30px;
         margin-top:10px;
         margin-right:10px;
+
+        color:black;
+        border-radius:20px;
+        width:60px;
+        height: 35px;
+        border-color:white;
     }
 
     .Blomster{
@@ -95,7 +101,7 @@
         margin-top:20px;
         height: clamp(50px,15vw,60px);
         width:95%;
-        background-image: url(Bilder/Blomsterhage.png);
+        background-image: url(Bilder/Bakgrunner/Blomsterhage.png);
         background-size: cover;
         border-radius: 10px;
         cursor:pointer;
@@ -108,7 +114,7 @@
 
     #PoliBilde{
         grid-row: 11;
-        background-image: url(Bilder/Bakgrunnsbilde2.webp);
+        background-image: url(Bilder/Bakgrunner/Bakgrunnsbilde2.webp);
         background-position:50% 5%;
     }
 
@@ -124,7 +130,7 @@
     
     
     .bakgrunnsconteiner{
-        background-image: url(Bilder/Blomstereng.png);
+        background-image: url(Bilder/Bakgrunner/Blomstereng.png);
         background-size: cover;
         background-position:center 30%;
         

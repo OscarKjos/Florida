@@ -2,7 +2,7 @@
 /*______________________________Mobil (Standard)___________________________*/
 @media (max-width:450px){
     body{
-        background-image: url(../Bilder/Backround4.webp);
+        background-image: url(../Bilder/Bakgrunner/Backround4.webp);
         background-position: center;
         background-size: 120%;
         background-color:rgba(241, 241, 233, 0.687);
@@ -40,7 +40,7 @@
         text-align: center;
         margin-bottom:0;
         font-family:var(--Overskrifts-font);
-        background-image: url(../Bilder/Backround2.webp);
+        background-image: url(../Bilder/Bakgrunner/Backround2.webp);
         background-position: center;
         background-size: 105%;
         margin:0;
@@ -72,7 +72,7 @@
         margin-left:5px;
         height: 50px;
 
-        background-image: url(../Bilder/Backround3.webp);
+        background-image: url(../Bilder/Bakgrunner/Backround3.webp);
         background-position: bottom;
         background-repeat: no-repeat;
         background-size: 100%;

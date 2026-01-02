@@ -37,7 +37,7 @@ function Blomster() {
   if (q1 && q1.value === "Georgine") score++;
   if (q2 && q2.value === "Kornblom") score++;
   if (q3 && q3.value === "Lavendel") score++;
-  if (q4 && q4.value === "Vil-løk") score++;
+  if (q4 && q4.value === "Vill-løk") score++;
 
   document.getElementById("result").textContent = `Du fikk ${score} / 4 riktige!`;
 
